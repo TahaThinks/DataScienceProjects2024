@@ -1,3 +1,4 @@
 import pandas as pd
 
-df = pd.read_csv("sample_data/QueryResults.csv")
+colnames = ['DATE', 'TAG', 'POSTS']
+df = pd.read_csv("sample_data/QueryResults.csv", names=colnames, header=0)
