@@ -24,3 +24,4 @@ print(type(pd.to_datetime(df["DATE"][1])))
 df.DATE = pd.to_datetime(df.DATE)
 print(df.head)
 
+# use pi
