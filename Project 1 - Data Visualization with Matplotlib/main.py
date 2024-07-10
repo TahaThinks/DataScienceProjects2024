@@ -24,4 +24,7 @@ print(type(pd.to_datetime(df["DATE"][1])))
 df.DATE = pd.to_datetime(df.DATE)
 print(df.head)
 
-# use pi
+# use pivot table
+reshaped_df = df.pivot(index="DATE", columns="TAG", values="POSTS")
+print(reshaped_df)
+
