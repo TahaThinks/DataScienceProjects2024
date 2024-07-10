@@ -36,5 +36,5 @@ print(reshaped_df.head())
 print(reshaped_df.tail())
 
 #DataFrame Column Name
-print(df.columns)
+print(reshaped_df.columns)
 
