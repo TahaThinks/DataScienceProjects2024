@@ -47,3 +47,4 @@ print(reshaped_df.head())
 
 #Check if there is any NaN values
 print(reshaped_df.isna().values.any())
+
