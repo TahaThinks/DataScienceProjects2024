@@ -38,6 +38,9 @@ print(reshaped_df.tail())
 #DataFrame Column Name
 print(reshaped_df.columns)
 
-
 #Count Data Entry per column
 print(reshaped_df.count())
+
+#Replace NAN Values with 0
+reshaped_df.fillna(0, inplace=True)
+print(reshaped_df.head())
