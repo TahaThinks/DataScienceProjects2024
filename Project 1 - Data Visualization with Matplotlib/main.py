@@ -49,5 +49,6 @@ print(reshaped_df.head())
 print(reshaped_df.isna().values.any())
 
 #plot Java data
+# plt.figure(figsize=(16,10))
 plt.plot(reshaped_df.index, reshaped_df["java"])
 plt.show()
