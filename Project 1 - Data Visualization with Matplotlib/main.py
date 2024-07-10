@@ -38,3 +38,6 @@ print(reshaped_df.tail())
 #DataFrame Column Name
 print(reshaped_df.columns)
 
+
+#Count Data Entry per column
+print(reshaped_df.count())
