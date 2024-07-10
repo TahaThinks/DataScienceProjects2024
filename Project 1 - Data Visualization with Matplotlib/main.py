@@ -48,7 +48,13 @@ print(reshaped_df.head())
 #Check if there is any NaN values
 print(reshaped_df.isna().values.any())
 
-#plot Java data
+#Customize the Plot
 # plt.figure(figsize=(16,10))
+plt.xticks(fontsize=14)
+plt.yticks(fontsize=14)
+
+
+
+#Plot Data about Java
 plt.plot(reshaped_df.index, reshaped_df["java"])
 plt.show()
