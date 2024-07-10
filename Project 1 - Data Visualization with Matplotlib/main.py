@@ -23,4 +23,4 @@ print(type(pd.to_datetime(df["DATE"][1])))
 #Convert Entire Column to Datetime
 df.DATE = pd.to_datetime(df.DATE)
 print(df.head)
-# print(df.iloc[df.groupby("TAG").size().argmax()])
+
