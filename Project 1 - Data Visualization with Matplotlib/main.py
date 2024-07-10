@@ -12,6 +12,9 @@ print(df.shape)
 # Count the number of entries in each column
 print(df.count())
 # Count the entries by Group
-print(df.groupby("TAG").size())
+print(df.groupby("TAG").sum())
+# Count the entries
+print(df.groupby("TAG").count())
+
 # GET the entry with the highest count
-print(df.iloc[df.groupby("TAG").size().argmax()])
+# print(df.iloc[df.groupby("TAG").size().argmax()])
