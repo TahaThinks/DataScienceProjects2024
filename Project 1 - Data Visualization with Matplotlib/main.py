@@ -28,3 +28,5 @@ print(df.head)
 reshaped_df = df.pivot(index="DATE", columns="TAG", values="POSTS")
 print(reshaped_df)
 
+#DateFrame Dimension
+print(reshaped_df.shape)
