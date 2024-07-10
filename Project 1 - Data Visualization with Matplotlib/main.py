@@ -1,5 +1,5 @@
 import pandas as pd
-
+import matplotlib.pyplot as plt
 colnames = ['DATE', 'TAG', 'POSTS']
 df = pd.read_csv("sample_data/QueryResults.csv", names=colnames, header=0)
 
