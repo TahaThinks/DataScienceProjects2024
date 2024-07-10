@@ -17,5 +17,6 @@ print(df.groupby("TAG").sum())
 print(df.groupby("TAG").count())
 
 # GET the entry with the highest count
-print(df["DATE"][1])
+print(pd.to_datetime(df["DATE"][1]))
+print(type(pd.to_datetime(df["DATE"][1])))
 # print(df.iloc[df.groupby("TAG").size().argmax()])
