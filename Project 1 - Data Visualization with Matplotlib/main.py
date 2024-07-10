@@ -28,5 +28,9 @@ print(df.head)
 reshaped_df = df.pivot(index="DATE", columns="TAG", values="POSTS")
 print(reshaped_df)
 
-#DateFrame Dimension
+#DataFrame Dimension
 print(reshaped_df.shape)
+
+#DataFrame HEAD & TAIL
+print(reshaped_df.head())
+print(reshaped_df.tail())
