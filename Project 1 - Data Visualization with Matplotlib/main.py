@@ -44,3 +44,6 @@ print(reshaped_df.count())
 #Replace NAN Values with 0
 reshaped_df.fillna(0, inplace=True)
 print(reshaped_df.head())
+
+#Check if there is any NaN values
+print(reshaped_df.isna().values.any())
