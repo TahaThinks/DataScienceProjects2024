@@ -58,7 +58,8 @@ plt.ylabel("Number of Posts", fontsize=14)
 
 plt.ylim(0,35000)
 
-#Plot Data about Java & Python
-plt.plot(reshaped_df.index, reshaped_df["java"])
-plt.plot(reshaped_df.index, reshaped_df["python"])
+#Plot Data about all Languages
+
+for column in reshaped_df.columns:
+    plt.plot(reshaped_df.index, reshaped_df[column])
 plt.show()
