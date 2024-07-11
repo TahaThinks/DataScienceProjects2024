@@ -49,7 +49,7 @@ print(reshaped_df.head())
 print(reshaped_df.isna().values.any())
 
 #Customize the Plot
-plt.figure(figsize=(10,10))
+plt.figure(figsize=(16,10))
 plt.xticks(fontsize=14)
 plt.yticks(fontsize=14)
 
@@ -61,5 +61,7 @@ plt.ylim(0,35000)
 #Plot Data about all Languages
 
 for column in reshaped_df.columns:
-    plt.plot(reshaped_df.index, reshaped_df[column])
+    plt.plot(reshaped_df.index, reshaped_df[column],
+             linewidth=3, label=reshaped_df[column].name)
+plt.legend(fontsize=14)
 plt.show()
