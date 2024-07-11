@@ -49,10 +49,12 @@ print(reshaped_df.head())
 print(reshaped_df.isna().values.any())
 
 #Customize the Plot
-# plt.figure(figsize=(16,10))
+plt.figure(figsize=(10,10))
 plt.xticks(fontsize=14)
 plt.yticks(fontsize=14)
 
+plt.xlabel("Date", fontsize=14)
+plt.ylabel("Number of Posts", fontsize=14)
 
 
 #Plot Data about Java
