@@ -56,6 +56,7 @@ plt.yticks(fontsize=14)
 plt.xlabel("Date", fontsize=14)
 plt.ylabel("Number of Posts", fontsize=14)
 
+plt.ylim(0,35000)
 
 #Plot Data about Java
 plt.plot(reshaped_df.index, reshaped_df["java"])
