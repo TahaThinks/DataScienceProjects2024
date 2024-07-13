@@ -60,8 +60,16 @@ plt.ylim(0,35000)
 
 #Plot Data about all Languages
 
-for column in reshaped_df.columns:
-    plt.plot(reshaped_df.index, reshaped_df[column],
-             linewidth=3, label=reshaped_df[column].name)
+# for column in reshaped_df.columns:
+#     plt.plot(reshaped_df.index, reshaped_df[column],
+#              linewidth=3, label=reshaped_df[column].name)
+
+roll_df = reshaped_df.rolling(window=3).mean()
+
+for column in roll_df.columns:
+    plt.plot(roll_df.index, roll_df[column],
+             linewidth=2, label=roll_df[column].name)
+
+
 plt.legend(fontsize=14)
 plt.show()
